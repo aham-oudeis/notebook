@@ -5,6 +5,7 @@ const cors = require("cors");
 
 app.use(express.json()); // allows us to access json from the body
 app.use(cors());
+app.use(express.static("build"));
 
 //routes
 //get all anecdotes
